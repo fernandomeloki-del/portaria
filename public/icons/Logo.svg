@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a90e2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7b68ee;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="phoneGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#66c3ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4a90e2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="packageGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#81c784;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#66bb6a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="512" height="512" fill="url(#bgGrad)" rx="128"/>
+  
+  <!-- Hand holding phone -->
+  <g transform="translate(140, 180)">
+    <!-- Hand -->
+    <path d="M50 120 C45 115, 40 110, 40 100 C40 90, 45 85, 55 85 C65 85, 70 90, 70 100 L70 110 L120 110 C130 110, 135 115, 135 125 L135 160 C135 170, 130 175, 120 175 L60 175 C50 175, 45 170, 45 160 L45 130 C45 125, 47 122, 50 120 Z" fill="#ffcc99"/>
+    
+    <!-- Phone -->
+    <rect x="80" y="20" width="100" height="160" rx="20" fill="url(#phoneGrad)" stroke="#ffffff" stroke-width="3"/>
+    
+    <!-- Phone screen -->
+    <rect x="90" y="35" width="80" height="130" rx="10" fill="#ffffff"/>
+    
+    <!-- Package on screen -->
+    <rect x="105" y="60" width="50" height="40" fill="url(#packageGrad)" rx="5"/>
+    
+    <!-- Lightning bolt (delivery speed) -->
+    <path d="M130 85 L135 75 L125 75 L130 65 L125 75 L130 85" fill="#ffa726" stroke="#ff9800" stroke-width="1"/>
+    
+    <!-- Package lines -->
+    <line x1="110" y1="80" x2="150" y2="80" stroke="#ffffff" stroke-width="2"/>
+    <line x1="130" y1="65" x2="130" y2="95" stroke="#ffffff" stroke-width="2"/>
+    
+    <!-- Phone button -->
+    <circle cx="130" cy="155" r="8" fill="#ffffff" opacity="0.8"/>
+    
+    <!-- Notification dots -->
+    <circle cx="60" cy="40" r="6" fill="#81c784"/>
+    <circle cx="200" cy="60" r="4" fill="#ffa726"/>
+    <circle cx="40" cy="80" r="5" fill="#64b5f6"/>
+    
+    <!-- Motion lines -->
+    <g stroke="#81c784" stroke-width="3" opacity="0.7">
+      <line x1="50" y1="90" x2="70" y2="90"/>
+      <line x1="200" y1="100" x2="220" y2="100"/>
+      <line x1="45" y1="110" x2="65" y2="110"/>
+      <line x1="195" y1="120" x2="215" y2="120"/>
+    </g>
+  </g>
+  
+  <!-- Bottom decorative elements -->
+  <g transform="translate(50, 400)">
+    <circle cx="0" cy="0" r="20" fill="#81c784" opacity="0.6"/>
+    <circle cx="400" cy="-20" r="15" fill="#ffa726" opacity="0.6"/>
+    <circle cx="350" cy="10" r="12" fill="#64b5f6" opacity="0.6"/>
+  </g>
+</svg>
